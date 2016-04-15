@@ -5,9 +5,9 @@ import DS from 'ember-data';
 import Ember from 'ember';
 
 export default Model.extend({
-  name: attr('string'),
-  address: attr('string'),
-  phone: attr('string'),
+  name: DS.attr('string'),
+  address: DS.attr('string'),
+  phone: DS.attr('string'),
 
   isValid: Ember.computed.notEmpty('name')
 });
