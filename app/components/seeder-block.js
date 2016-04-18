@@ -5,6 +5,7 @@ export default Ember.Component.extend({
 
   actions: {
     generateAction() {
+      console.log('generate');
       this.sendAction('generateAction');
     },
 
